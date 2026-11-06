@@ -1,4 +1,4 @@
-# WorldCitiMed 🏥
+# WorldCitiMed
 ### Medical Center Queue Management System
 
 WorldCitiMed is a desktop-based queue management system developed using **C# Windows Forms and Microsoft SQL Server**. It was created to help organize patient queues, manage registrations, and make the queuing process easier for both patients and hospital staff.
