@@ -1,0 +1,23 @@
+
+# Visual Studio temporary and build files
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.slnLaunch.user
+
+# SQL Server databases and backups
+*.mdf
+*.ldf
+*.bak
+
+# Local settings and secrets
+.env
+.env.*
+appsettings.Development.json
+*.publishsettings
+*.pfx
+
+# NuGet packages restored during build
+packages/

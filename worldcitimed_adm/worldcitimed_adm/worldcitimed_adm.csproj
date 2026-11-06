@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{080D3DDE-54D7-4E3D-9D0F-10562FC82A98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>worldcitimed_adm</RootNamespace>
+    <AssemblyName>worldcitimed_adm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\..\worldcitimed\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\..\worldcitimed\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.6, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\worldcitimed\packages\iTextSharp.5.5.13.6\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmADM.Designer.cs">
+      <DependentUpon>frmADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminAcc.Designer.cs">
+      <DependentUpon>frmAdminAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBILL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBILL.Designer.cs">
+      <DependentUpon>frmBILL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCASH.Designer.cs">
+      <DependentUpon>frmCASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreate.Designer.cs">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateStaff.Designer.cs">
+      <DependentUpon>frmCreateStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashCreate.Designer.cs">
+      <DependentUpon>frmDashCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHMO.Designer.cs">
+      <DependentUpon>frmHMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOPD.Designer.cs">
+      <DependentUpon>frmOPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPH.Designer.cs">
+      <DependentUpon>frmPH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintADM.Designer.cs">
+      <DependentUpon>frmPrintADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintBILL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintBILL.Designer.cs">
+      <DependentUpon>frmPrintBILL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintCASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintCASH.Designer.cs">
+      <DependentUpon>frmPrintCASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintHMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintHMO.Designer.cs">
+      <DependentUpon>frmPrintHMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintOPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintOPD.Designer.cs">
+      <DependentUpon>frmPrintOPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrintPH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintPH.Designer.cs">
+      <DependentUpon>frmPrintPH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffAcc.Designer.cs">
+      <DependentUpon>frmStaffAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmADM.resx">
+      <DependentUpon>frmADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminAcc.resx">
+      <DependentUpon>frmAdminAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBILL.resx">
+      <DependentUpon>frmBILL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCASH.resx">
+      <DependentUpon>frmCASH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreate.resx">
+      <DependentUpon>frmCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateStaff.resx">
+      <DependentUpon>frmCreateStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashCreate.resx">
+      <DependentUpon>frmDashCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHMO.resx">
+      <DependentUpon>frmHMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOPD.resx">
+      <DependentUpon>frmOPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPH.resx">
+      <DependentUpon>frmPH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintADM.resx">
+      <DependentUpon>frmPrintADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintBILL.resx">
+      <DependentUpon>frmPrintBILL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintCASH.resx">
+      <DependentUpon>frmPrintCASH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintHMO.resx">
+      <DependentUpon>frmPrintHMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintOPD.resx">
+      <DependentUpon>frmPrintOPD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintPH.resx">
+      <DependentUpon>frmPrintPH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffAcc.resx">
+      <DependentUpon>frmStaffAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-04-26 213459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ph %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ph %282%29 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billl %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regis %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appro %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
